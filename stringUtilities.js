@@ -37,7 +37,8 @@ const changeCaseArrow = (string)=>
         // console.log(STRING)
         return STRING
 }
-const string = 'MeRRy hAD a LITTle lAMp'
+// input
+// const string = 'MeRRy hAD a LITTle lAMp'
 // const changeStringCase = changeCase(string)
 // console.log(changeCaseArrow(changeStringCase))
 
@@ -67,7 +68,35 @@ const longestStringArrow=arrayOfString=>
     return longest
 }
 
-const arrayOfString = ["we", "love", "code", "academy"]
-console.log(longestString(arrayOfString))
-console.log(longestStringArrow(arrayOfString))
+// input
+// const arrayOfString = ["we", "love", "code", "academy"]
+// console.log(longestString(arrayOfString))
+// console.log(longestStringArrow(arrayOfString))
+
+// Q6. Write a JavaScript function ( both regular and arrow function) which takes a string as parameter to test whether a string end with "Script"(case-sensitive). 
+// The string length must be greater or equal to 6.
+
+function endWithScript(string,endsWith)
+{
+    let stringLength = string.length
+    let scriptIndex = stringLength-6
+    if(scriptIndex<=0)return false
+    switch(string.slice(scriptIndex)===endsWith){
+        case true :  return true
+        case false : return false
+    }
+}
+
+const endWithScriptArrow = (string,endsWith)=>
+{
+    let stringLength = string.length
+    let scriptIndex = stringLength-6
+    if(scriptIndex<=0)return false
+    switch(string.slice(scriptIndex)===endsWith){
+        case true :  return true
+        case false : return false
+    }
+}
+console.log(endWithScript('javaScript','Script'))
+console.log(endWithScriptArrow('Script','Script'))
 
