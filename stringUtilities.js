@@ -97,6 +97,21 @@ const endWithScriptArrow = (string,endsWith)=>
         case false : return false
     }
 }
-console.log(endWithScript('javaScript','Script'))
-console.log(endWithScriptArrow('Script','Script'))
+// console.log(endWithScript('javaScript','Script'))
+// console.log(endWithScriptArrow('Script','Script'))
+
+// Q7. Write a JavaScript function ( both regular and arrow function) which takes an array of 2 strings as parameter to concatenate two strings except their first character
+
+function stringConcatenation(stringArr)
+{
+    const concatenateString = stringArr[0].slice(1) + stringArr[1].slice(1)
+    return concatenateString
+}
+const stringConcatenation2 = (stringArr)=>
+{
+    const concatenateString = stringArr[0].slice(1) + stringArr[1].slice(1)
+    return concatenateString
+}
+stringArr = ["code", "academy"]
+console.log(stringConcatenation(stringArr))
 
