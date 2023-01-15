@@ -112,6 +112,30 @@ const stringConcatenation2 = (stringArr)=>
     const concatenateString = stringArr[0].slice(1) + stringArr[1].slice(1)
     return concatenateString
 }
-stringArr = ["code", "academy"]
-console.log(stringConcatenation(stringArr))
+// stringArr = ["code", "academy"]
+// console.log(stringConcatenation(stringArr))
 
+// Q8. Write a JavaScript function ( both regular and arrow function) which takes a string as parameter to count the number of vowels in a given string.
+
+function countVowels(string)
+{
+    let count =0
+    const vowels = ['a','e','i','o','u']
+    string.split('').forEach(char=>
+        {
+            vowels.includes(char)?count+=1:null
+        })
+        return count
+}
+
+const countVowels2 = (string)=>
+{
+    let count =0
+    const vowels = ['a','e','i','o','u']
+    string.split('').forEach(char=>
+        {
+            vowels.includes(char)?count+=1:null
+        })
+        return count
+}
+console.log(countVowels2("codeacademy"))
