@@ -23,12 +23,13 @@ const findLargestEvenNumber2 = numbers =>
 // numbers = [1,2,4,3,5,3,8,9,11,35,12]
 // console.log(findLargestEvenNumber(numbers))
 // console.log(findLargestEvenNumber2(numbers))
-module.exports = findLargestEvenNumber; //testing for findLargestEvenNumber function
+// module.exports = findLargestEvenNumber; //testing for findLargestEvenNumber function
 // Q2. Write a JavaScript function (both regular and arrow) which takes a number as param to check whether all the digits in a given number are the same or not,
 // and print true or false. Consider numbers to have 2 digits or more.
 
 function isSameDigit(number)
 {
+    number = Math.abs(number)
     let digit = number%10
     number = parseInt(number/10)
     while(number>0)
@@ -42,6 +43,7 @@ function isSameDigit(number)
 
 const isSameDigit2=(number)=>
 {
+    number = Math.abs(number)
     let digit = number%10
     number = parseInt(number/10)
     while(number>0)
@@ -53,8 +55,10 @@ const isSameDigit2=(number)=>
     return true
 }
 
-console.log(isSameDigit(22))
+// console.log(isSameDigit(22))
 console.log(isSameDigit(23))
 
-console.log(isSameDigit2(23))
-console.log(isSameDigit2(22))
+// console.log(isSameDigit2(23))
+// console.log(isSameDigit2(22))
+
+module.exports = isSameDigit
