@@ -138,4 +138,34 @@ const countVowels2 = (string)=>
         })
         return count
 }
-console.log(countVowels2("codeacademy"))
+// console.log(countVowels2("codeacademy"))
+
+// Q9. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
+
+function replaceCharacter(string)
+{
+    let replacedStr = ''
+    string.split('').forEach(char=>{
+    let unicode =  char.charCodeAt()
+    unicode===90?unicode=64:null
+    unicode===122?unicode=96:null
+    let replacedChar = String.fromCharCode(unicode+1)
+    replacedStr+=replacedChar
+   }) 
+   return replacedStr
+}
+
+const replaceCharacter2 = (string) =>
+{
+    let replacedStr = ''
+    string.split('').forEach(char=>{
+    let unicode =  char.charCodeAt()
+    unicode===90?unicode=64:null
+    unicode===122?unicode=96:null
+    let replacedChar = String.fromCharCode(unicode+1)
+    replacedStr+=replacedChar
+   }) 
+   return replacedStr
+}
+const string = "codeacademy"
+console.log(replaceCharacter(string))
