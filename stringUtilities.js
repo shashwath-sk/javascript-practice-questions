@@ -19,7 +19,6 @@ const changeOperation = (char,STRING)=>
 function changeCase(string)
 {
     let STRING =''
-    let capital = /[A-Z]/
     string.split('').forEach(char=>
         {
             STRING = changeOperation(char,STRING)
@@ -39,5 +38,8 @@ const changeCaseArrow = (string)=>
         return STRING
 }
 const string = 'MeRRy hAD a LITTle lAMp'
-const changeStringCase = changeCase(string)
-console.log(changeCaseArrow(changeStringCase))
+// const changeStringCase = changeCase(string)
+// console.log(changeCaseArrow(changeStringCase))
+
+
+
