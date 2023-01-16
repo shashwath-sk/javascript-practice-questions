@@ -21,21 +21,17 @@ const isSameDigit = require('./numberUtilities');
 // })
 
 
-test('to check all digits in a number are same',()=>
-{
-    expect(isSameDigit(22)).toBe(true)
-})
+test('to check all digits in a number are same', () => {
+  expect(isSameDigit(22)).toBe(true);
+});
 
-test('to check all digits in a number are same',()=>
-{
-  expect(isSameDigit(23)).toBe(false)
-})
-test('to check all digits in a number are same',()=>
-{
-  expect(isSameDigit(-111)).toBe(true)
-})
+test('to check all digits in a number are same', () => {
+  expect(isSameDigit(23)).toBe(false);
+});
+test('to check all digits in a number are same', () => {
+  expect(isSameDigit(-111)).toBe(true);
+});
 
-test('to check all digits in a number are same',()=>
-{
-  expect(isSameDigit(-23)).toBe(false)
-})
+test('to check all digits in a number are same', () => {
+  expect(isSameDigit(-23)).toBe(false);
+});
